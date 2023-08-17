@@ -14,8 +14,8 @@ import (
 
 func main() {
 
-	token := "xoxb-5686869092359-5742892319394-DHVYnC4YEG9M1gsZ4IMxA84d"
-	appToken := "xapp-1-A05MUPC098T-5750387648388-e149aa33939d1fec5eac6bd80f68f2d44c67bbfda4b4f23c9191a5825a5c8d46"
+	token := os.Getenv("SLACK_BOT_USER_TOKEN")
+	appToken := os.Getenv("SLACK_APP_TOKEN")
 	// Create a new client to slack by giving token
 	// Set debug to true while developing
 	// Also add a ApplicationToken option to the client
